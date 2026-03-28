@@ -1002,6 +1002,7 @@ section[id] { scroll-margin-top: 80px; }
     border-bottom: 1px solid rgba(255,255,255,0.08);
   }
   .nav-links a { padding: 0.75rem 0; font-size: 1rem; }
+  .nav-cta { display: none; }
   .nav-toggle:checked ~ .nav-links { display: flex; }
   /* animate hamburger */
   .nav-toggle:checked ~ .nav-hamburger span:nth-child(1) { transform: translateY(9px) rotate(45deg); }
