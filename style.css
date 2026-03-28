@@ -201,19 +201,12 @@ section[id] { scroll-margin-top: 80px; }
   border-radius: 8px;
   font-weight: 600;
   font-size: 1rem;
-  transition: all 0.2s ease;
-  box-shadow: 0 0 20px rgba(59,130,246,0.3);
-  animation: cta-glow 2.5s ease-in-out infinite;
+  transition: opacity 0.2s, transform 0.2s;
 }
 .btn-primary:hover {
-  opacity: 0.95;
+  opacity: 0.9;
   text-decoration: none;
   transform: translateY(-1px);
-  box-shadow: 0 0 35px rgba(59,130,246,0.5);
-}
-@keyframes cta-glow {
-  0%, 100% { box-shadow: 0 0 20px rgba(59,130,246,0.3); }
-  50% { box-shadow: 0 0 30px rgba(59,130,246,0.5); }
 }
 .btn-secondary {
   display: inline-block;
@@ -294,9 +287,9 @@ section[id] { scroll-margin-top: 80px; }
   transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 .card-base:hover {
-  transform: translateY(-3px);
-  border-color: rgba(59,130,246,0.2);
-  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  transform: translateY(-2px);
+  border-color: rgba(255,255,255,0.1);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
 }
 
 /* ── Shared badge base ──────────────────────────────────── */
@@ -1013,36 +1006,6 @@ section[id] { scroll-margin-top: 80px; }
 .legal p, .legal li { color: var(--gray); }
 .legal h2, .legal h3 { color: var(--white); }
 
-/* ── Testimonials ──────────────────────────────────────── */
-.testimonials-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-}
-.testimonial-card {
-  padding: 2rem;
-}
-.testimonial-quote {
-  color: var(--gray);
-  font-size: 1rem;
-  font-style: italic;
-  line-height: 1.6;
-  margin-bottom: 1.25rem;
-}
-.testimonial-author {
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
-}
-.testimonial-author strong {
-  color: var(--white);
-  font-size: 0.95rem;
-}
-.testimonial-author span {
-  color: var(--gray-dim);
-  font-size: 0.8rem;
-}
-
 /* ── Urgency + Quick Wins ─────────────────────────────── */
 .urgency-note {
   display: inline-block;
@@ -1090,7 +1053,6 @@ section[id] { scroll-margin-top: 80px; }
   .hero h1 { font-size: 2.25rem; }
 
   .pain-grid { grid-template-columns: 1fr; gap: 1rem; }
-  .testimonials-grid { grid-template-columns: 1fr; }
   .steps { grid-template-columns: 1fr; gap: 1.5rem; }
   .features-grid { grid-template-columns: 1fr; }
   .usecases-grid { grid-template-columns: 1fr; }
