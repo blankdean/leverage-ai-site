@@ -57,7 +57,7 @@ a:hover { text-decoration: underline; }
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0;
 }
 .section-title::after {
   content: '';
@@ -66,14 +66,14 @@ a:hover { text-decoration: underline; }
   height: 3px;
   background: var(--accent);
   border-radius: 2px;
-  margin: 0.75rem auto 0;
+  margin: 1rem auto 1.25rem;
 }
 .section-subtitle {
   text-align: center;
   color: var(--gray);
   font-size: 1.1rem;
   max-width: 640px;
-  margin: 0 auto 3rem;
+  margin: 0 auto 2.5rem;
 }
 section[id] { scroll-margin-top: 80px; }
 
@@ -348,49 +348,11 @@ section[id] { scroll-margin-top: 80px; }
   margin: 0;
 }
 
-/* ── How It Works ───────────────────────────────────────── */
-.steps {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
-  position: relative;
-}
-.step {
-  text-align: center;
-  position: relative;
-}
-.step-num {
-  display: inline-flex;
+/* ── How It Works (flow chart) ──────────────────────────── */
+.how-it-works-flow {
+  max-width: 560px;
+  margin: 0 auto;
   align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: var(--accent);
-  color: var(--white);
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin-bottom: 1.25rem;
-}
-.step h3 {
-  font-size: 1rem;
-  margin: 0 0 0.5rem;
-  color: var(--white);
-}
-.step p {
-  color: var(--gray);
-  font-size: 0.9rem;
-  margin: 0;
-}
-/* connector line between steps */
-.step:not(:last-child)::after {
-  content: '';
-  position: absolute;
-  top: 24px;
-  left: calc(50% + 32px);
-  width: calc(100% - 64px);
-  height: 2px;
-  background: rgba(59, 130, 246, 0.3);
 }
 
 /* ── Features / Services ────────────────────────────────── */
@@ -746,26 +708,7 @@ section[id] { scroll-margin-top: 80px; }
   font-size: 0.65rem;
 }
 
-/* ── Human Handoff ──────────────────────────────────────── */
-.handoff-layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: center;
-}
-.handoff-content h2 {
-  font-size: 2rem;
-  margin: 0 0 1rem;
-}
-.handoff-content p {
-  color: var(--gray);
-  font-size: 1.05rem;
-  margin-bottom: 1.5rem;
-}
-.handoff-list li {
-  font-size: 0.95rem;
-  padding: 0.5rem 0 0.5rem 1.75rem;
-}
+
 
 /* flow diagram */
 .handoff-flow {
@@ -1037,12 +980,9 @@ section[id] { scroll-margin-top: 80px; }
 
 /* ── Responsive ─────────────────────────────────────────── */
 @media (max-width: 1024px) {
-  .steps { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
-  .step:not(:last-child)::after { display: none; }
   .dashboard-showcase { grid-template-columns: 1fr; }
   .mock-stats-grid { grid-template-columns: repeat(2, 1fr); }
   .integrations-grid { grid-template-columns: repeat(2, 1fr); }
-  .handoff-layout { grid-template-columns: 1fr; gap: 2rem; }
 }
 
 @media (max-width: 768px) {
@@ -1053,7 +993,6 @@ section[id] { scroll-margin-top: 80px; }
   .hero h1 { font-size: 2.25rem; }
 
   .pain-grid { grid-template-columns: 1fr; gap: 1rem; }
-  .steps { grid-template-columns: 1fr; gap: 1.5rem; }
   .features-grid { grid-template-columns: 1fr; }
   .usecases-grid { grid-template-columns: 1fr; }
   .integrations-grid { grid-template-columns: 1fr; }

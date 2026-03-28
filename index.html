@@ -97,27 +97,31 @@
   <section id="how-it-works" class="section">
     <div class="section-inner">
       <h2 class="section-title">How It Works</h2>
-      <p class="section-subtitle">From first call to confirmed appointment. Details gathered, urgency assessed, both sides confirmed.</p>
-      <div class="steps">
-        <div class="step">
-          <div class="step-num">1</div>
-          <h3>Customer Reaches Out</h3>
-          <p>A customer calls or texts your business number about a service they need.</p>
-        </div>
-        <div class="step">
-          <div class="step-num">2</div>
-          <h3>Agent Gathers Details</h3>
-          <p>Collects their name, address, and issue details. Assesses urgency automatically.</p>
-        </div>
-        <div class="step">
-          <div class="step-num">3</div>
-          <h3>You Confirm the Job</h3>
-          <p>You get the full details and priority level. Approve the appointment, and the customer gets notified with the confirmed time.</p>
-        </div>
-        <div class="step">
-          <div class="step-num">4</div>
-          <h3>Customer Confirms</h3>
-          <p>Customer receives the appointment details and confirms. Everything logged in your dashboard.</p>
+      <p class="section-subtitle">From first call to confirmed appointment. AI handles the routine, you handle the exceptions.</p>
+      <div class="handoff-flow how-it-works-flow">
+        <div class="flow-node flow-node-agent">Customer calls or texts your business number</div>
+        <div class="flow-connector">&darr;</div>
+        <div class="flow-node flow-node-agent">AI agent responds instantly, gathers name, address, and issue details</div>
+        <div class="flow-connector">&darr;</div>
+        <div class="flow-node flow-node-agent">Assesses urgency: routine, priority, or emergency</div>
+        <div class="flow-connector">&darr;</div>
+        <div class="flow-split">
+          <div class="flow-branch">
+            <span class="flow-branch-label">Routine</span>
+            <div class="flow-connector">&darr;</div>
+            <div class="flow-node flow-node-routine">Sends you the details for approval</div>
+            <div class="flow-connector">&darr;</div>
+            <div class="flow-node flow-node-routine">You approve, customer confirms</div>
+            <div class="flow-connector">&darr;</div>
+            <div class="flow-node flow-node-routine">Appointment booked &amp; logged</div>
+          </div>
+          <div class="flow-branch">
+            <span class="flow-branch-label">Needs a human</span>
+            <div class="flow-connector">&darr;</div>
+            <div class="flow-node flow-node-escalate">Agent notifies you immediately</div>
+            <div class="flow-connector">&darr;</div>
+            <div class="flow-node flow-node-human">You get full context and jump in</div>
+          </div>
         </div>
       </div>
     </div>
@@ -471,46 +475,6 @@
         <div class="integration-card card-base">
           <h3>Buildertrend <span class="int-badge badge-base badge-blue">Available</span></h3>
           <p>Construction and remodeling focused. Project scheduling, client portal, and communication tools.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── Human Handoff ────────────────────────────────── -->
-  <section class="section section-alt">
-    <div class="section-inner">
-      <div class="handoff-layout">
-        <div class="handoff-content">
-          <h2>AI First, Human Always Available</h2>
-          <p>Your AI agent handles the routine stuff so you don't have to. When a customer needs a real person, the agent notifies you with full context so you can jump in fast.</p>
-          <ul class="handoff-list check-list">
-            <li>Customers can always ask for a real person. You get notified instantly</li>
-            <li>Agent automatically escalates emergencies and complex situations</li>
-            <li>You get a full summary of the conversation so you're never out of the loop</li>
-            <li>Works alongside your team, not instead of them</li>
-          </ul>
-        </div>
-        <div class="handoff-flow">
-          <div class="flow-node flow-node-agent">Customer texts or calls your number</div>
-          <div class="flow-connector">&darr;</div>
-          <div class="flow-node flow-node-agent">AI Agent responds instantly</div>
-          <div class="flow-connector">&darr;</div>
-          <div class="flow-split">
-            <div class="flow-branch">
-              <span class="flow-branch-label">Routine</span>
-              <div class="flow-connector">&darr;</div>
-              <div class="flow-node flow-node-routine">Books appointment</div>
-              <div class="flow-connector">&darr;</div>
-              <div class="flow-node flow-node-routine">Confirms with customer</div>
-            </div>
-            <div class="flow-branch">
-              <span class="flow-branch-label">Needs a human</span>
-              <div class="flow-connector">&darr;</div>
-              <div class="flow-node flow-node-escalate">Agent notifies you</div>
-              <div class="flow-connector">&darr;</div>
-              <div class="flow-node flow-node-human">You get the full context</div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
