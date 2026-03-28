@@ -1171,6 +1171,11 @@ section[id] { scroll-margin-top: 80px; }
   .usecase-flow { gap: 0.35rem; }
   .flow-step { font-size: 0.7rem; padding: 3px 8px; }
 
+  /* urgency + quick wins */
+  .urgency-note { font-size: 0.8rem; padding: 0.4rem 1rem; }
+  .quick-wins { gap: 0.75rem 1.25rem; }
+  .quick-win { font-size: 0.8rem; }
+
   /* form */
   .form-input { padding: 0.65rem 0.85rem; font-size: 0.9rem; }
   .interest-form { max-width: 100%; }
