@@ -3,43 +3,676 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Leverage AI LLC — AI-Powered Automation for Home Service Businesses</title>
-  <meta name="description" content="Leverage AI builds SMS and voice AI agents that handle customer inquiries, appointment scheduling, and service follow-ups for home service and trade businesses.">
+  <title>Leverage AI — AI-Powered Booking Agents for Home Service Businesses</title>
+  <meta name="description" content="Never miss another customer. Leverage AI builds SMS and voice AI agents that answer inquiries, book appointments, and capture every lead for HVAC, plumbing, electrical, and locksmith businesses.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- ── Nav ──────────────────────────────────────────── -->
   <header class="site-header">
     <div class="inner">
       <a href="/" class="logo">Leverage AI</a>
-      <nav>
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-        <a href="sms-policy.html">SMS Policy</a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+      <label for="nav-toggle" class="nav-hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="nav-links" onclick="document.getElementById('nav-toggle').checked=false">
+        <a href="#how-it-works">How It Works</a>
+        <a href="#features">Features</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#integrations">Integrations</a>
+        <a href="#use-cases">Use Cases</a>
+        <a href="#demo" class="nav-cta">Get a Demo</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <h1>Leverage AI LLC</h1>
-      <p class="tagline">AI-powered automation for home service businesses</p>
-      <p class="desc">
-        We build SMS and voice AI agents that handle customer inquiries,
-        appointment scheduling, and service follow-ups for home service
-        and trade businesses — HVAC, plumbing, electrical, locksmith, and more.
-      </p>
-      <a href="mailto:contact.leverage.ai@gmail.com" class="contact">Get in Touch</a>
-    </section>
+  <main>
+
+  <!-- ── Hero ─────────────────────────────────────────── -->
+  <section class="hero">
+    <h1>Never Miss Another Customer Call</h1>
+    <p class="tagline">AI agents that answer your customers, book appointments, and capture every lead &mdash; even while you're on a job.</p>
+    <p class="supported">Built for HVAC, plumbing, electrical, locksmith, and home service businesses.</p>
+    <div class="cta-buttons">
+      <a href="#demo" class="btn-primary">Get a Demo</a>
+      <a href="#how-it-works" class="btn-secondary">See How It Works</a>
+    </div>
+
+    <!-- Phone mockup -->
+    <div class="phone-mockup">
+      <div class="phone-screen">
+        <div class="phone-header">Summit HVAC</div>
+        <div class="sms-label">Customer</div>
+        <div class="sms-bubble sms-incoming">Hi, my AC stopped working last night. Can someone come take a look?</div>
+        <div class="sms-label sms-label-right">AI Agent</div>
+        <div class="sms-bubble sms-outgoing">Hi! Sorry to hear that. I'd be happy to help get one of our techs out. Can I get your name and address?</div>
+        <div class="sms-label">Customer</div>
+        <div class="sms-bubble sms-incoming">Sarah Johnson, 245 Elm Street, Bucks County</div>
+        <div class="sms-label sms-label-right">AI Agent</div>
+        <div class="sms-bubble sms-outgoing">Thanks Sarah! Is the unit not turning on at all, or running but blowing warm air?</div>
+        <div class="sms-label">Customer</div>
+        <div class="sms-bubble sms-incoming">Blowing warm air, started yesterday afternoon</div>
+        <div class="sms-label sms-label-right">AI Agent</div>
+        <div class="sms-bubble sms-outgoing">Got it. I've sent the details to the team. Once they confirm a slot, I'll text you right back to confirm.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Pain Points ──────────────────────────────────── -->
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2 class="section-title">Sound Familiar?</h2>
+      <p class="section-subtitle">You're great at your trade. But every missed call is a customer who called someone else.</p>
+      <div class="pain-grid">
+        <div class="pain-card card-base">
+          <span class="pain-icon" aria-hidden="true">&#128222;</span>
+          <h3>Out on a Job</h3>
+          <p>Your phone keeps ringing while you're on a roof, under a sink, or in a crawl space. You can't answer every call.</p>
+        </div>
+        <div class="pain-card card-base">
+          <span class="pain-icon" aria-hidden="true">&#9201;</span>
+          <h3>Customers Won't Wait</h3>
+          <p>Most customers call the next company if they don't hear back within minutes. Speed wins the job.</p>
+        </div>
+        <div class="pain-card card-base">
+          <span class="pain-icon" aria-hidden="true">&#128203;</span>
+          <h3>Leads Fall Through the Cracks</h3>
+          <p>No system to capture customer details means lost names, lost addresses, and lost revenue.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── How It Works ─────────────────────────────────── -->
+  <section id="how-it-works" class="section">
+    <div class="section-inner">
+      <h2 class="section-title">How It Works</h2>
+      <p class="section-subtitle">From first text to confirmed appointment &mdash; details gathered, urgency assessed, and both sides confirmed.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Customer Reaches Out</h3>
+          <p>A customer texts or calls your business number about a service they need.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Agent Gathers Details</h3>
+          <p>Collects their name, address, issue description, and assesses the urgency level &mdash; all automatically.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>You Confirm the Job</h3>
+          <p>You get the full details and priority level. Approve the appointment, and the customer gets notified with the confirmed time.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <h3>Customer Confirms</h3>
+          <p>Customer receives the appointment details and confirms. Everything logged in your dashboard &mdash; no loose ends.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Features / Services ──────────────────────────── -->
+  <section id="features" class="section section-alt">
+    <div class="section-inner">
+      <h2 class="section-title">Your AI-Powered Front Desk</h2>
+      <p class="section-subtitle">First line of defense for your business &mdash; customers can always reach your team directly when they need a human.</p>
+      <div class="features-grid">
+        <div class="feature-card card-base">
+          <span class="feature-icon" aria-hidden="true">&#128172;</span>
+          <span class="feature-badge badge-base badge-green">Live</span>
+          <h3>SMS Agent</h3>
+          <p>An AI agent that handles customer texts 24/7, so you never lose a lead &mdash; even at 2am.</p>
+          <ul class="feature-list check-list">
+            <li>Responds to customer texts in seconds, 24/7</li>
+            <li>Automatically gathers name, address, and full issue details</li>
+            <li>Identifies urgency level &mdash; routine, priority, or emergency</li>
+            <li>Appointments created with all the details already filled in</li>
+            <li>Two-way confirmation: you approve first, then customer confirms</li>
+            <li>Follow-up confirmations and reminders sent automatically</li>
+            <li>Answers FAQs about your business and services</li>
+            <li>Escalates to you for emergencies or complex requests</li>
+            <li>Every conversation stored and searchable in your dashboard</li>
+          </ul>
+          <p class="feature-note">Your customers can always request to speak with a real person &mdash; the agent connects them to you with full context.</p>
+        </div>
+        <div class="feature-card card-base">
+          <span class="feature-icon" aria-hidden="true">&#128222;</span>
+          <span class="feature-badge badge-base badge-yellow">Coming Soon</span>
+          <h3>Voice Agent</h3>
+          <p>A natural-sounding AI that answers your phone calls, runs the same booking flow, and keeps customers happy.</p>
+          <ul class="feature-list check-list">
+            <li>Answers calls with a natural, professional voice</li>
+            <li>Same booking and info-capture flow as SMS</li>
+            <li>Escalates to your team when the situation needs a human</li>
+            <li>Handles after-hours and overflow calls</li>
+            <li>Full call transcripts in your dashboard</li>
+          </ul>
+          <p class="feature-note">Works alongside your team, not instead of them. Your phone line, your rules.</p>
+          <div class="feature-cta">
+            <a href="#demo" class="btn-secondary btn-sm">Join the Waitlist</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Use Cases ────────────────────────────────────── -->
+  <section id="use-cases" class="section">
+    <div class="section-inner">
+      <h2 class="section-title">Built for Every Trade</h2>
+      <p class="section-subtitle">Real scenarios from real businesses. Your AI agent adapts to your trade and your customers.</p>
+      <div class="usecases-grid">
+        <div class="usecase-card card-base">
+          <span class="trade-icon" aria-hidden="true">&#10052;</span>
+          <h3>HVAC</h3>
+          <p>Customer texts "AC blowing warm air" at 9pm on a Saturday. Agent gathers details, flags it as priority, sends to your team. You approve a Monday morning slot, customer confirms &mdash; done.</p>
+          <div class="usecase-flow">
+            <span class="flow-step">Text received</span>
+            <span class="flow-arrow">&rarr;</span>
+            <span class="flow-step">Info collected</span>
+            <span class="flow-arrow">&rarr;</span>
+            <span class="flow-step">Appointment booked</span>
+          </div>
+        </div>
+        <div class="usecase-card card-base">
+          <span class="trade-icon" aria-hidden="true">&#128167;</span>
+          <h3>Plumbing</h3>
+          <p>Homeowner texts about a leaking faucet during your lunch break. Agent asks about the fixture type and severity, creates a detailed job with all the notes. You approve, customer confirms the time.</p>
+          <div class="usecase-flow">
+            <span class="flow-step">Text received</span>
+            <span class="flow-arrow">&rarr;</span>
+            <span class="flow-step">Details noted</span>
+            <span class="flow-arrow">&rarr;</span>
+            <span class="flow-step">Job scheduled</span>
+          </div>
+        </div>
+        <div class="usecase-card card-base">
+          <span class="trade-icon" aria-hidden="true">&#9889;</span>
+          <h3>Electrical</h3>
+          <p>Customer calls about flickering lights. Agent collects address, notes which rooms are affected, assesses if it's a safety concern, and queues the inspection for your approval.</p>
+          <div class="usecase-flow">
+            <span class="flow-step">Call answered</span>
+            <span class="flow-arrow">&rarr;</span>
+            <span class="flow-step">Inspection scheduled</span>
+            <span class="flow-arrow">&rarr;</span>
+            <span class="flow-step">Confirmation sent</span>
+          </div>
+        </div>
+        <div class="usecase-card card-base">
+          <span class="trade-icon" aria-hidden="true">&#128273;</span>
+          <h3>Locksmith</h3>
+          <p>Locked-out customer texts at 11pm. Agent recognizes the emergency, captures their location, and immediately escalates to your on-call tech with a full summary.</p>
+          <div class="usecase-flow">
+            <span class="flow-step">Emergency text</span>
+            <span class="flow-arrow">&rarr;</span>
+            <span class="flow-step">Info captured</span>
+            <span class="flow-arrow">&rarr;</span>
+            <span class="flow-step">Escalated to you</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Dashboard Screenshots ────────────────────────── -->
+  <section id="dashboard" class="section section-alt">
+    <div class="section-inner">
+      <h2 class="section-title">Your Command Center</h2>
+      <p class="section-subtitle">See every conversation, booking, and lead in one place. Know exactly what's happening with your customers.</p>
+
+      <!-- Conversation List + Chat Transcript side by side -->
+      <div class="dashboard-showcase">
+        <!-- Mock: Conversation List -->
+        <div class="mock-browser">
+          <div class="mock-toolbar">
+            <div class="mock-dot mock-dot-red"></div>
+            <div class="mock-dot mock-dot-yellow"></div>
+            <div class="mock-dot mock-dot-green"></div>
+            <div class="mock-url">summit-hvac-dash.leverageai.llc</div>
+          </div>
+          <div class="mock-body">
+            <div class="mock-nav">
+              <span class="mock-nav-brand">Summit HVAC</span>
+              <span class="active">Conversations</span>
+              <span>Stats</span>
+            </div>
+            <div class="mock-content">
+              <div class="mock-table-wrap">
+              <table class="mock-table">
+                <thead>
+                  <tr>
+                    <th>Phone</th>
+                    <th>Status</th>
+                    <th>Messages</th>
+                    <th>Last Activity</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="mock-phone">+1 (215) 555-0142</td>
+                    <td><span class="mock-badge mock-badge-active">Active</span></td>
+                    <td>6</td>
+                    <td>2 min ago</td>
+                  </tr>
+                  <tr>
+                    <td class="mock-phone">+1 (267) 555-0198</td>
+                    <td><span class="mock-badge mock-badge-active">Active</span></td>
+                    <td>4</td>
+                    <td>18 min ago</td>
+                  </tr>
+                  <tr>
+                    <td class="mock-phone">+1 (484) 555-0067</td>
+                    <td><span class="mock-badge mock-badge-escalated">Escalated</span></td>
+                    <td>8</td>
+                    <td>45 min ago</td>
+                  </tr>
+                  <tr>
+                    <td class="mock-phone">+1 (610) 555-0231</td>
+                    <td><span class="mock-badge mock-badge-resolved">Resolved</span></td>
+                    <td>6</td>
+                    <td>1 hr ago</td>
+                  </tr>
+                  <tr>
+                    <td class="mock-phone">+1 (215) 555-0089</td>
+                    <td><span class="mock-badge mock-badge-resolved">Resolved</span></td>
+                    <td>4</td>
+                    <td>3 hrs ago</td>
+                  </tr>
+                </tbody>
+              </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mock: SMS Conversation -->
+        <div class="mock-browser">
+          <div class="mock-toolbar">
+            <div class="mock-dot mock-dot-red"></div>
+            <div class="mock-dot mock-dot-yellow"></div>
+            <div class="mock-dot mock-dot-green"></div>
+            <div class="mock-url">summit-hvac-dash.leverageai.llc/conversation/a3f...</div>
+          </div>
+          <div class="mock-body">
+            <div class="mock-nav">
+              <span class="mock-nav-brand">Summit HVAC</span>
+              <span class="active">Conversations</span>
+              <span>Stats</span>
+            </div>
+            <div class="mock-chat">
+              <div class="mock-msg-row mock-msg-row-user">
+                <span class="mock-msg-time">10:32 AM</span>
+                <div class="mock-msg mock-msg-user">Hi, my AC stopped working last night</div>
+              </div>
+              <div class="mock-msg-row mock-msg-row-agent">
+                <span class="mock-msg-time">10:32 AM</span>
+                <div class="mock-msg mock-msg-agent">Hi! Sorry to hear that. Can I get your name and address so we can get a tech out to you?</div>
+              </div>
+              <div class="mock-msg-row mock-msg-row-user">
+                <span class="mock-msg-time">10:33 AM</span>
+                <div class="mock-msg mock-msg-user">Sarah Johnson, 245 Elm St, Bucks County</div>
+              </div>
+              <div class="mock-msg-row mock-msg-row-agent">
+                <span class="mock-msg-time">10:33 AM</span>
+                <div class="mock-msg mock-msg-agent">Thanks Sarah! Is it not turning on at all, or running but blowing warm?</div>
+              </div>
+              <div class="mock-msg-row mock-msg-row-user">
+                <span class="mock-msg-time">10:34 AM</span>
+                <div class="mock-msg mock-msg-user">Blowing warm since yesterday</div>
+              </div>
+              <div class="mock-msg-row mock-msg-row-agent">
+                <span class="mock-msg-time">10:34 AM</span>
+                <div class="mock-msg mock-msg-agent">Got it &mdash; I've sent the details to the team. You'll get a text to confirm once the appointment is set.</div>
+              </div>
+              <div class="mock-msg-row mock-msg-row-agent">
+                <span class="mock-msg-time">10:51 AM</span>
+                <div class="mock-msg mock-msg-agent">Great news Sarah! Tomorrow Tue Mar 29, 8&ndash;10am works. Can you confirm that time?</div>
+              </div>
+              <div class="mock-msg-row mock-msg-row-user">
+                <span class="mock-msg-time">10:52 AM</span>
+                <div class="mock-msg mock-msg-user">Yes that works!</div>
+              </div>
+              <div class="mock-msg-row mock-msg-row-agent">
+                <span class="mock-msg-time">10:52 AM</span>
+                <div class="mock-msg mock-msg-agent">Confirmed! A tech will call when they're on the way.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mock: Analytics Dashboard -->
+      <div class="mock-browser">
+        <div class="mock-toolbar">
+          <div class="mock-dot mock-dot-red"></div>
+          <div class="mock-dot mock-dot-yellow"></div>
+          <div class="mock-dot mock-dot-green"></div>
+          <div class="mock-url">summit-hvac-dash.leverageai.llc/stats</div>
+        </div>
+        <div class="mock-body">
+          <div class="mock-nav">
+            <span class="mock-nav-brand">Summit HVAC</span>
+            <span>Conversations</span>
+            <span class="active">Stats</span>
+          </div>
+          <div class="mock-content">
+            <div class="mock-stats-grid">
+              <div class="mock-stat">
+                <div class="mock-stat-value">47</div>
+                <div class="mock-stat-label">Conversations Today</div>
+              </div>
+              <div class="mock-stat">
+                <div class="mock-stat-value">38</div>
+                <div class="mock-stat-label">Bookings This Week</div>
+              </div>
+              <div class="mock-stat">
+                <div class="mock-stat-value">&lt; 3s</div>
+                <div class="mock-stat-label">Avg Response Time</div>
+              </div>
+              <div class="mock-stat">
+                <div class="mock-stat-value">81%</div>
+                <div class="mock-stat-label">Booking Rate</div>
+              </div>
+            </div>
+            <div class="mock-chart-section mock-chart-gap">
+              <div class="mock-chart-title">Bookings This Week</div>
+              <div class="mock-bar-chart">
+                <div class="mock-bar-col">
+                  <div class="mock-bar" style="height: 60%;"></div>
+                  <span class="mock-bar-label">Mon</span>
+                </div>
+                <div class="mock-bar-col">
+                  <div class="mock-bar" style="height: 80%;"></div>
+                  <span class="mock-bar-label">Tue</span>
+                </div>
+                <div class="mock-bar-col">
+                  <div class="mock-bar" style="height: 45%;"></div>
+                  <span class="mock-bar-label">Wed</span>
+                </div>
+                <div class="mock-bar-col">
+                  <div class="mock-bar" style="height: 90%;"></div>
+                  <span class="mock-bar-label">Thu</span>
+                </div>
+                <div class="mock-bar-col">
+                  <div class="mock-bar" style="height: 100%;"></div>
+                  <span class="mock-bar-label">Fri</span>
+                </div>
+                <div class="mock-bar-col">
+                  <div class="mock-bar" style="height: 35%;"></div>
+                  <span class="mock-bar-label">Sat</span>
+                </div>
+                <div class="mock-bar-col">
+                  <div class="mock-bar" style="height: 10%;"></div>
+                  <span class="mock-bar-label">Sun</span>
+                </div>
+              </div>
+            </div>
+            <div class="mock-funnel">
+              <div class="mock-funnel-step">
+                <div class="mock-funnel-value">312</div>
+                <div class="mock-funnel-label">Leads This Month</div>
+              </div>
+              <div class="mock-funnel-arrow">&rarr;</div>
+              <div class="mock-funnel-step">
+                <div class="mock-funnel-value">287</div>
+                <div class="mock-funnel-label">Conversations</div>
+              </div>
+              <div class="mock-funnel-arrow">&rarr;</div>
+              <div class="mock-funnel-step">
+                <div class="mock-funnel-value">234</div>
+                <div class="mock-funnel-label">Bookings</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Integrations ─────────────────────────────────── -->
+  <section id="integrations" class="section">
+    <div class="section-inner">
+      <h2 class="section-title">Works With Your Scheduling Tools</h2>
+      <p class="section-subtitle">Your AI agent books directly into the systems you already use. No double entry, no manual syncing.</p>
+      <div class="integrations-grid">
+        <div class="integration-card card-base">
+          <h3>HouseCall Pro <span class="int-badge badge-base badge-green">Integrated</span></h3>
+          <p>Full booking, customer lookup, and availability checks. The industry standard for home service scheduling.</p>
+        </div>
+        <div class="integration-card card-base">
+          <h3>ServiceTitan <span class="int-badge badge-base badge-blue">Available</span></h3>
+          <p>Market leader for residential trades. Dispatch, booking, invoicing, and customer management.</p>
+        </div>
+        <div class="integration-card card-base">
+          <h3>Jobber <span class="int-badge badge-base badge-blue">Available</span></h3>
+          <p>Popular with smaller shops. Jobs, clients, scheduling, and quoting all in one place.</p>
+        </div>
+        <div class="integration-card card-base">
+          <h3>FieldEdge <span class="int-badge badge-base badge-blue">Available</span></h3>
+          <p>Built specifically for HVAC, plumbing, and electrical. Strong dispatch and service history.</p>
+        </div>
+        <div class="integration-card card-base">
+          <h3>Google Calendar <span class="int-badge badge-base badge-blue">Available</span></h3>
+          <p>Universal option for businesses that keep it simple. Your agent reads and writes to your calendar.</p>
+        </div>
+        <div class="integration-card card-base">
+          <h3>Buildertrend <span class="int-badge badge-base badge-blue">Available</span></h3>
+          <p>Construction and remodeling focused. Project scheduling, client portal, and communication tools.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Human Handoff ────────────────────────────────── -->
+  <section class="section section-alt">
+    <div class="section-inner">
+      <div class="handoff-layout">
+        <div class="handoff-content">
+          <h2>AI First, Human Always Available</h2>
+          <p>Your AI agent is the first line of defense &mdash; it handles the routine stuff so you don't have to. But when a customer needs a real person, the agent connects them directly to you or your team.</p>
+          <ul class="handoff-list check-list">
+            <li>Customers can always request to speak with a human</li>
+            <li>Agent automatically escalates emergencies and complex situations</li>
+            <li>You get a full summary of the conversation so you're never out of the loop</li>
+            <li>Works alongside your team, not instead of them</li>
+          </ul>
+        </div>
+        <div class="handoff-flow">
+          <div class="flow-node flow-node-agent">Customer texts or calls your number</div>
+          <div class="flow-connector">&darr;</div>
+          <div class="flow-node flow-node-agent">AI Agent responds instantly</div>
+          <div class="flow-connector">&darr;</div>
+          <div class="flow-split">
+            <div class="flow-branch">
+              <span class="flow-branch-label">Routine</span>
+              <div class="flow-connector">&darr;</div>
+              <div class="flow-node flow-node-routine">Books appointment</div>
+              <div class="flow-connector">&darr;</div>
+              <div class="flow-node flow-node-routine">Confirms with customer</div>
+            </div>
+            <div class="flow-branch">
+              <span class="flow-branch-label">Needs a human</span>
+              <div class="flow-connector">&darr;</div>
+              <div class="flow-node flow-node-escalate">Agent escalates</div>
+              <div class="flow-connector">&darr;</div>
+              <div class="flow-node flow-node-human">You get the full context</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Trust Signals ────────────────────────────────── -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="trust-grid">
+        <div class="trust-item">
+          <div class="trust-value">&lt; 3 sec</div>
+          <div class="trust-label">Average response time</div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-value">24/7</div>
+          <div class="trust-label">Always available, even holidays</div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-value">0</div>
+          <div class="trust-label">Missed leads</div>
+        </div>
+      </div>
+      <div class="powered-by">
+        Powered by <span>Claude AI</span> <span>Twilio SMS</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Final CTA + Interest Form ─────────────────────── -->
+  <section id="demo" class="section">
+    <div class="cta-section">
+      <h2>Ready to Stop Missing Customers?</h2>
+      <p>Get your AI agent set up in under a week. No long-term contracts. Cancel anytime.</p>
+      <form id="interest-form" class="interest-form" action="https://formspree.io/f/xlgogqyo" method="POST">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Your name" required class="form-input">
+          <input type="text" name="business" placeholder="Business name" required class="form-input">
+        </div>
+        <div class="form-row">
+          <input type="email" name="email" placeholder="Email address" required class="form-input">
+          <input type="tel" name="phone" placeholder="Phone number" class="form-input">
+        </div>
+        <div class="form-row">
+          <select name="trade" class="form-input" required>
+            <option value="" disabled selected>What's your trade?</option>
+            <option value="hvac">HVAC</option>
+            <option value="plumbing">Plumbing</option>
+            <option value="electrical">Electrical</option>
+            <option value="locksmith">Locksmith</option>
+            <option value="general-contractor">General Contractor</option>
+            <option value="other">Other Home Service</option>
+          </select>
+          <select name="scheduling_tool" class="form-input">
+            <option value="" disabled selected>Current scheduling tool?</option>
+            <option value="housecall-pro">HouseCall Pro</option>
+            <option value="servicetitan">ServiceTitan</option>
+            <option value="jobber">Jobber</option>
+            <option value="fieldedge">FieldEdge</option>
+            <option value="google-calendar">Google Calendar</option>
+            <option value="none">None / Pen &amp; Paper</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <button type="submit" id="form-btn" class="btn-primary form-submit">Get a Free Demo</button>
+        <p class="form-note">We'll reach out within 24 hours. No spam, no pressure.</p>
+        <p id="form-status" class="form-status" hidden></p>
+      </form>
+      <script>
+      (function(){
+        var LIMIT = 3;
+        var WINDOW_MS = 24 * 60 * 60 * 1000;
+        var KEY = 'lai_form_ts';
+        var form = document.getElementById('interest-form');
+        var btn = document.getElementById('form-btn');
+        var status = document.getElementById('form-status');
+
+        function getTimestamps() {
+          try { return JSON.parse(localStorage.getItem(KEY) || '[]'); }
+          catch(e) { return []; }
+        }
+        function isLimited() {
+          var now = Date.now();
+          var ts = getTimestamps().filter(function(t){ return now - t < WINDOW_MS; });
+          localStorage.setItem(KEY, JSON.stringify(ts));
+          return ts.length >= LIMIT;
+        }
+        function recordSubmission() {
+          var ts = getTimestamps();
+          ts.push(Date.now());
+          localStorage.setItem(KEY, JSON.stringify(ts));
+        }
+
+        if (isLimited()) {
+          btn.disabled = true;
+          btn.textContent = 'Already submitted';
+          status.textContent = "You've already submitted a request. We'll be in touch soon!";
+          status.hidden = false;
+          status.className = 'form-status form-status-info';
+        }
+
+        form.addEventListener('submit', function(e) {
+          if (isLimited()) {
+            e.preventDefault();
+            status.textContent = "You've already submitted a request. We'll be in touch soon!";
+            status.hidden = false;
+            status.className = 'form-status form-status-info';
+            return;
+          }
+          e.preventDefault();
+          btn.disabled = true;
+          btn.textContent = 'Sending...';
+
+          fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' }
+          }).then(function(r) {
+            if (r.ok) {
+              recordSubmission();
+              form.reset();
+              btn.textContent = 'Submitted!';
+              status.textContent = "Thanks! We'll reach out within 24 hours.";
+              status.hidden = false;
+              status.className = 'form-status form-status-success';
+            } else {
+              btn.disabled = false;
+              btn.textContent = 'Get a Free Demo';
+              status.textContent = 'Something went wrong. Please try again or email us directly.';
+              status.hidden = false;
+              status.className = 'form-status form-status-error';
+            }
+          }).catch(function() {
+            btn.disabled = false;
+            btn.textContent = 'Get a Free Demo';
+            status.textContent = 'Network error. Please try again.';
+            status.hidden = false;
+            status.className = 'form-status form-status-error';
+          });
+        });
+      })();
+      </script>
+    </div>
+  </section>
+
   </main>
 
+  <!-- ── Footer ───────────────────────────────────────── -->
   <footer class="site-footer">
-    <div class="footer-links">
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms &amp; Conditions</a>
-      <a href="sms-policy.html">SMS Policy</a>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h3>Leverage AI</h3>
+        <p>AI-powered booking agents for home service businesses. Never miss another customer.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#features">Features</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#integrations">Integrations</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="sms-policy.html">SMS Policy</a>
+      </div>
     </div>
-    <p>&copy; 2025 Leverage AI LLC &middot; Erie, PA</p>
+    <div class="footer-bottom">
+      &copy; 2025&ndash;2026 Leverage AI LLC &middot; Erie, PA &middot;
+      <a href="mailto:contact.leverage.ai@gmail.com">contact.leverage.ai@gmail.com</a>
+    </div>
   </footer>
 
 </body>
