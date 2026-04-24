@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Leverage AI | AI-Powered Booking Agents for Home Service Businesses</title>
-  <meta name="description" content="Never miss another customer. Leverage AI builds voice and SMS AI agents that answer inquiries, book appointments, and capture every lead for HVAC, plumbing, electrical, and locksmith businesses.">
+  <title>Leverage AI | 24/7 AI Voice Agents for Home Service Businesses</title>
+  <meta name="description" content="A voice agent that answers every call, books the job, and never takes a day off. Built for HVAC, plumbing, electrical, locksmith, and home service businesses.">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='7' y='3' width='18' height='26' rx='3.5' ry='3.5' fill='none' stroke='%23ffffff' stroke-width='1.8'/%3E%3Cline x1='12' y1='12' x2='20' y2='12' stroke='rgba(255,255,255,0.5)' stroke-width='1.3' stroke-linecap='round'/%3E%3Cline x1='12' y1='16' x2='18' y2='16' stroke='rgba(255,255,255,0.5)' stroke-width='1.3' stroke-linecap='round'/%3E%3Cline x1='12' y1='20' x2='16' y2='20' stroke='rgba(255,255,255,0.5)' stroke-width='1.3' stroke-linecap='round'/%3E%3Cpath d='M26 1 L27.2 4.3 L30.5 5.5 L27.2 6.7 L26 10 L24.8 6.7 L21.5 5.5 L24.8 4.3 Z' fill='%233b82f6'/%3E%3C/svg%3E">
-  <meta property="og:title" content="Leverage AI | AI Booking Agents for Home Service Businesses">
-  <meta property="og:description" content="Never miss another customer. AI agents that answer inquiries, book appointments, and capture every lead 24/7.">
+  <meta property="og:title" content="Leverage AI | 24/7 AI Voice Agents for Home Service Businesses">
+  <meta property="og:description" content="A voice agent that answers every call, books the job, and never takes a day off. Built for HVAC, plumbing, electrical, locksmith, and home service businesses.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://leverageai.llc">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Leverage AI | AI Booking Agents for Home Service Businesses">
-  <meta name="twitter:description" content="Never miss another customer. AI agents that answer inquiries, book appointments, and capture every lead 24/7.">
+  <meta name="twitter:title" content="Leverage AI | 24/7 AI Voice Agents for Home Service Businesses">
+  <meta name="twitter:description" content="A voice agent that answers every call, books the job, and never takes a day off. Built for HVAC, plumbing, electrical, locksmith, and home service businesses.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,10 +26,10 @@
         <span></span><span></span><span></span>
       </label>
       <nav class="nav-links" onclick="document.getElementById('nav-toggle').checked=false">
+        <a href="#what-makes-it-different">Why It's Different</a>
         <a href="#how-it-works">How It Works</a>
         <a href="#features">Features</a>
         <a href="#dashboard">Dashboard</a>
-        <a href="#integrations">Integrations</a>
         <a href="#demo" class="nav-cta">Get a Demo</a>
       </nav>
     </div>
@@ -39,35 +39,109 @@
 
   <!-- ── Hero ─────────────────────────────────────────── -->
   <section class="hero">
-    <h1>Your AI Employee That Never Misses a Call</h1>
-    <p class="tagline">AI-powered voice and SMS agents that answer customers, book jobs, and capture every lead &mdash; 24/7, even while you're on a ladder.</p>
+    <span class="hero-eyebrow">AI Voice Receptionist</span>
+    <h1>Your AI Receptionist That Answers Every Call</h1>
+    <p class="tagline">A voice agent that picks up on the first ring, understands what the customer needs, and books the job &mdash; 24/7, in 15+ languages, without a single missed call.</p>
     <p class="supported">Built for HVAC, plumbing, electrical, locksmith, and home service businesses.</p>
     <div class="cta-buttons">
-      <a href="#demo" class="btn-primary">See It In Action</a>
+      <a href="#demo" class="btn-primary">Hear It In Action</a>
       <a href="#how-it-works" class="btn-secondary">See How It Works</a>
     </div>
 
-    <!-- Phone mockup -->
-    <div class="phone-mockup reveal">
-      <div class="phone-screen">
-        <div class="phone-notch"></div>
-        <div class="phone-time">
-          <span class="phone-time-left">10:32</span>
-          <span class="phone-time-right">5G &#9679; 87%</span>
+    <!-- Live Call Mockup -->
+    <div class="call-mockup reveal" aria-label="Live voice call demo">
+      <div class="call-topbar">
+        <div class="call-status">
+          <span class="call-live-dot"></span>
+          <span class="call-live-label">Live Call</span>
+          <span class="call-timer" id="call-timer">00:00</span>
         </div>
-        <div class="phone-header">Summit HVAC</div>
-        <div class="sms-label">Customer</div>
-        <div class="sms-bubble sms-incoming">Hi, my AC stopped working last night. Can someone come take a look?</div>
-        <div class="sms-label sms-label-right">AI Agent</div>
-        <div class="sms-bubble sms-outgoing">Hi! Sorry to hear that. I'd be happy to help get one of our techs out. Can I get your name and address?</div>
-        <div class="sms-label">Customer</div>
-        <div class="sms-bubble sms-incoming">Sarah Johnson, 245 Elm Street, Bucks County</div>
-        <div class="sms-label sms-label-right">AI Agent</div>
-        <div class="sms-bubble sms-outgoing">Thanks Sarah! Is the unit not turning on at all, or running but blowing warm air?</div>
-        <div class="sms-label">Customer</div>
-        <div class="sms-bubble sms-incoming">Blowing warm air, started yesterday afternoon</div>
-        <div class="sms-label sms-label-right">AI Agent</div>
-        <div class="sms-bubble sms-outgoing">Got it &mdash; I've sent the details to the team. They'll reach out to confirm your appointment time!</div>
+        <div class="call-number">
+          <svg class="call-phone-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+1 (215) 555-0142 &middot; Philadelphia, PA</span>
+        </div>
+      </div>
+
+      <div class="call-main">
+        <div class="call-caller">
+          <div class="call-avatar">SJ</div>
+          <div class="call-caller-meta">
+            <strong>Sarah Johnson</strong>
+            <span>Customer &middot; English</span>
+          </div>
+        </div>
+        <div class="call-waveform" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+
+      <div class="call-transcript" role="list">
+        <div class="call-line call-line-customer" role="listitem" style="--delay:1.2s">
+          <span class="call-line-who">Customer</span>
+          <span class="call-line-text">Hi, my AC stopped working last night.</span>
+        </div>
+        <div class="call-line call-line-agent" role="listitem" style="--delay:3.4s">
+          <span class="call-line-who">Agent</span>
+          <span class="call-line-text">I'm sorry to hear that &mdash; I can get a tech out today. Can I grab your name and address?</span>
+        </div>
+        <div class="call-line call-line-customer" role="listitem" style="--delay:6.8s">
+          <span class="call-line-who">Customer</span>
+          <span class="call-line-text">Sarah Johnson, 245 Elm Street, Bucks County.</span>
+        </div>
+        <div class="call-line call-line-agent" role="listitem" style="--delay:9.2s">
+          <span class="call-line-who">Agent</span>
+          <span class="call-line-text">Got it, Sarah. Is the unit not turning on, or running but blowing warm?</span>
+        </div>
+        <div class="call-line call-line-customer" role="listitem" style="--delay:12.0s">
+          <span class="call-line-who">Customer</span>
+          <span class="call-line-text">Blowing warm since yesterday afternoon.</span>
+        </div>
+        <div class="call-line call-line-agent" role="listitem" style="--delay:14.0s">
+          <span class="call-line-who">Agent</span>
+          <span class="call-line-text">Thanks. I've got a tech who can be there between 2 and 4 today &mdash; want me to book that?</span>
+        </div>
+        <div class="call-booked" role="status" aria-live="polite">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          <span>Booked &middot; Tech dispatched &middot; 2&ndash;4 PM today</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Differentiators ──────────────────────────────── -->
+  <section id="what-makes-it-different" class="section section-alt">
+    <div class="section-inner">
+      <h2 class="section-title reveal">Built for Real Conversations</h2>
+      <p class="section-subtitle reveal">Not a chatbot. Not a phone tree. A voice agent that sounds human and works like one too.</p>
+      <div class="diff-grid reveal-stagger">
+        <div class="diff-card card-base reveal">
+          <div class="diff-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+          </div>
+          <h3>Responds in under a second</h3>
+          <p>Natural back-and-forth at the speed of a real conversation. Customers don't realize they're talking to AI.</p>
+        </div>
+        <div class="diff-card card-base reveal">
+          <div class="diff-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          </div>
+          <h3>Speaks 15+ languages</h3>
+          <p>English, Spanish, French, Portuguese, German, Italian, Mandarin, and more &mdash; detected automatically on every call.</p>
+        </div>
+        <div class="diff-card card-base reveal">
+          <div class="diff-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+          </div>
+          <h3>Trained on your business</h3>
+          <p>Knows your pricing, service area, brands you install, and answers FAQs in your business's voice.</p>
+        </div>
+        <div class="diff-card card-base reveal">
+          <div class="diff-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+          </div>
+          <h3>You stay in control</h3>
+          <p>Owner gets an SMS the moment something needs human judgment. Every booking waits for your approval.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -80,23 +154,23 @@
       <div class="steps-grid reveal">
         <div class="step-card">
           <span class="step-number">1</span>
-          <span class="step-card-title">Customer Reaches Out</span>
-          <span class="step-card-desc">A customer calls or texts your business line</span>
+          <span class="step-card-title">Customer Calls In</span>
+          <span class="step-card-desc">Your business line rings &mdash; the agent picks up on the first ring, any hour, any day</span>
         </div>
         <div class="step-card">
           <span class="step-number">2</span>
-          <span class="step-card-title">AI Agent Responds</span>
-          <span class="step-card-desc">Collects details and checks your availability instantly</span>
+          <span class="step-card-title">Agent Takes the Call</span>
+          <span class="step-card-desc">Natural conversation: collects the issue, urgency, name, and address</span>
         </div>
         <div class="step-card">
           <span class="step-number">3</span>
-          <span class="step-card-title">Appointment Booked</span>
-          <span class="step-card-desc">Agent schedules the job right into your system</span>
+          <span class="step-card-title">Job Gets Booked</span>
+          <span class="step-card-desc">Agent checks your availability and writes the appointment into your scheduling tool</span>
         </div>
         <div class="step-card">
           <span class="step-number">4</span>
-          <span class="step-card-title">You Stay in Control</span>
-          <span class="step-card-desc">Approve the booking and the customer gets confirmed</span>
+          <span class="step-card-title">You Approve &amp; Go</span>
+          <span class="step-card-desc">One tap to approve &mdash; customer gets a confirmation text, you get a lead you never missed</span>
         </div>
       </div>
     </div>
@@ -105,28 +179,29 @@
   <!-- ── Features / Services ──────────────────────────── -->
   <section id="features" class="section section-alt">
     <div class="section-inner">
-      <h2 class="section-title reveal">Your AI-Powered Front Desk</h2>
-      <p class="section-subtitle reveal">One agent that handles calls and texts. When something needs your attention, you get notified with the full story.</p>
+      <h2 class="section-title reveal">Your 24/7 Front Desk</h2>
+      <p class="section-subtitle reveal">One voice agent answering every call. SMS handled too, for the customers who'd rather text.</p>
       <div class="features-grid features-grid-single">
         <div class="feature-card card-base reveal">
           <div class="feature-badges">
             <span class="feature-badge badge-base badge-green">&#128222; Voice</span>
-            <span class="feature-badge badge-base badge-green">&#128172; SMS</span>
+            <span class="feature-badge badge-base badge-muted">&#128172; Also SMS</span>
           </div>
           <h3>Your AI Agent</h3>
-          <p>Answers calls and texts 24/7 with a natural, professional tone. Never lose a lead, even at 2am.</p>
+          <p>Picks up every call with a natural, professional tone &mdash; even at 2am on a Sunday.</p>
           <ul class="feature-list check-list">
-            <li>Automatically gathers name, address, and full issue details</li>
-            <li>Identifies urgency: routine, priority, or emergency</li>
-            <li>Creates appointments with all details filled in</li>
-            <li>You approve first, then customer confirms</li>
-            <li>Notifies you immediately when a situation needs a human</li>
-            <li>Handles after-hours, overflow, and FAQs</li>
-            <li>Every conversation stored and searchable in your dashboard</li>
+            <li>Picks up on the first ring, every time</li>
+            <li>Collects name, address, issue details, and urgency</li>
+            <li>Identifies routine vs. priority vs. emergency</li>
+            <li>Books the job directly into your scheduling tool</li>
+            <li>Escalates to you instantly when judgment's needed</li>
+            <li>Handles after-hours, holidays, and overflow without breaking character</li>
+            <li>Every call transcribed and searchable in your dashboard</li>
+            <li>Also answers SMS for customers who prefer texting</li>
           </ul>
           <p class="feature-note">Works alongside your team, not instead of them. Your phone line, your rules.</p>
           <div class="feature-cta">
-            <a href="#demo" class="btn-primary btn-sm">See It In Action</a>
+            <a href="#demo" class="btn-primary btn-sm">Hear It In Action</a>
           </div>
         </div>
       </div>
@@ -180,8 +255,8 @@
                       <span class="mock-phone-sm">(215) 555-0142</span>
                     </td>
                     <td><span class="mock-badge-real mock-badge-active">active</span></td>
-                    <td><span class="mock-badge-real mock-badge-sms">sms</span></td>
-                    <td class="hide-sm">6</td>
+                    <td><span class="mock-badge-real mock-badge-voice">voice</span></td>
+                    <td class="hide-sm">8</td>
                     <td>2m ago</td>
                   </tr>
                   <tr>
@@ -191,7 +266,7 @@
                     </td>
                     <td><span class="mock-badge-real mock-badge-active">active</span></td>
                     <td><span class="mock-badge-real mock-badge-voice">voice</span></td>
-                    <td class="hide-sm">4</td>
+                    <td class="hide-sm">6</td>
                     <td>18m ago</td>
                   </tr>
                   <tr>
@@ -200,8 +275,8 @@
                       <span class="mock-phone-sm">(484) 555-0067</span>
                     </td>
                     <td><span class="mock-badge-real mock-badge-escalated">escalated</span></td>
-                    <td><span class="mock-badge-real mock-badge-sms">sms</span></td>
-                    <td class="hide-sm">8</td>
+                    <td><span class="mock-badge-real mock-badge-voice">voice</span></td>
+                    <td class="hide-sm">11</td>
                     <td>45m ago</td>
                   </tr>
                   <tr>
@@ -220,7 +295,7 @@
                       <span class="mock-phone-sm">(215) 555-0089</span>
                     </td>
                     <td><span class="mock-badge-real mock-badge-resolved">resolved</span></td>
-                    <td><span class="mock-badge-real mock-badge-voice">voice</span></td>
+                    <td><span class="mock-badge-real mock-badge-sms">sms</span></td>
                     <td class="hide-sm">4</td>
                     <td>3h ago</td>
                   </tr>
@@ -253,35 +328,36 @@
                 <strong>Sarah Johnson</strong>
                 <span class="mock-phone-sm">(215) 555-0142</span>
                 <span class="mock-badge-real mock-badge-active">active</span>
-                <span class="mock-badge-real mock-badge-sms">sms</span>
+                <span class="mock-badge-real mock-badge-voice">voice</span>
                 <span class="mock-live-dot"></span><span class="mock-live-label">Live</span>
               </div>
+              <div class="mock-call-meta">Duration 2m 14s &middot; Language: English &middot; Incoming call</div>
             </div>
             <div class="mock-chat-real">
-              <div class="mock-date-divider">TODAY</div>
+              <div class="mock-date-divider">CALL TRANSCRIPT &middot; TODAY</div>
               <div class="mock-msg-row mock-msg-row-user">
-                <span class="mock-msg-meta">Customer &middot; 10:32 AM</span>
+                <span class="mock-msg-meta">Customer &middot; 00:04</span>
                 <div class="mock-msg mock-msg-user-real">Hi, my AC stopped working last night</div>
               </div>
               <div class="mock-msg-row mock-msg-row-agent">
-                <span class="mock-msg-meta">Agent &middot; 10:32 AM</span>
-                <div class="mock-msg mock-msg-agent-real">Hi! Sorry to hear that. Can I get your name and address so we can get a tech out to you?</div>
+                <span class="mock-msg-meta">Agent &middot; 00:06</span>
+                <div class="mock-msg mock-msg-agent-real">I'm sorry to hear that &mdash; I can get a tech out today. Can I grab your name and address?</div>
               </div>
               <div class="mock-msg-row mock-msg-row-user">
-                <span class="mock-msg-meta">Customer &middot; 10:33 AM</span>
-                <div class="mock-msg mock-msg-user-real">Sarah Johnson, 245 Elm St</div>
+                <span class="mock-msg-meta">Customer &middot; 00:15</span>
+                <div class="mock-msg mock-msg-user-real">Sarah Johnson, 245 Elm Street, Bucks County</div>
               </div>
               <div class="mock-msg-row mock-msg-row-agent">
-                <span class="mock-msg-meta">Agent &middot; 10:33 AM</span>
-                <div class="mock-msg mock-msg-agent-real">Thanks Sarah! Is it not turning on at all, or blowing warm?</div>
+                <span class="mock-msg-meta">Agent &middot; 00:17</span>
+                <div class="mock-msg mock-msg-agent-real">Got it, Sarah. Is the unit not turning on, or running but blowing warm?</div>
               </div>
               <div class="mock-msg-row mock-msg-row-user">
-                <span class="mock-msg-meta">Customer &middot; 10:34 AM</span>
-                <div class="mock-msg mock-msg-user-real">Blowing warm since yesterday</div>
+                <span class="mock-msg-meta">Customer &middot; 00:24</span>
+                <div class="mock-msg mock-msg-user-real">Blowing warm since yesterday afternoon</div>
               </div>
               <div class="mock-msg-row mock-msg-row-agent">
-                <span class="mock-msg-meta">Agent &middot; 10:34 AM</span>
-                <div class="mock-msg mock-msg-agent-real">Got it, I've sent the details to the team. They'll reach out to confirm your appointment time!</div>
+                <span class="mock-msg-meta">Agent &middot; 00:26</span>
+                <div class="mock-msg mock-msg-agent-real">Thanks. I've got a tech who can be there between 2 and 4 today &mdash; want me to book that?</div>
               </div>
             </div>
           </div>
@@ -326,21 +402,23 @@
                 <div class="mock-stat-value">2</div>
                 <div class="mock-stat-label">Escalations</div>
               </div>
-              <div class="mock-stat-real mock-stat-blue">
-                <div class="mock-stat-value">287</div>
-                <div class="mock-stat-label">Total Conversations</div>
-              </div>
               <div class="mock-stat-real mock-stat-purple">
-                <div class="mock-stat-value">64</div>
-                <div class="mock-stat-label">Voice Calls</div>
-              </div>
-              <div class="mock-stat-real mock-stat-red">
-                <div class="mock-stat-value">$12.40</div>
-                <div class="mock-stat-label">AI Cost This Month</div>
-                <div class="mock-stat-sub">48,200 tokens</div>
+                <div class="mock-stat-value">287</div>
+                <div class="mock-stat-label">Calls Answered</div>
+                <div class="mock-stat-sub">this month</div>
               </div>
               <div class="mock-stat-real mock-stat-blue">
-                <div class="mock-stat-value">2.8s</div>
+                <div class="mock-stat-value">6</div>
+                <div class="mock-stat-label">Languages Handled</div>
+                <div class="mock-stat-sub">EN, ES, FR, PT, DE, IT</div>
+              </div>
+              <div class="mock-stat-real mock-stat-green">
+                <div class="mock-stat-value">0</div>
+                <div class="mock-stat-label">Missed Calls</div>
+                <div class="mock-stat-sub">last 30 days</div>
+              </div>
+              <div class="mock-stat-real mock-stat-blue">
+                <div class="mock-stat-value">&lt;1s</div>
                 <div class="mock-stat-label">Avg Response Time</div>
                 <div class="mock-stat-sub">287 conversations</div>
               </div>
@@ -390,16 +468,16 @@
     <div class="section-inner">
       <div class="trust-grid reveal-stagger">
         <div class="trust-item reveal">
-          <div class="trust-value">&lt; 3 sec</div>
-          <div class="trust-label">Average response time</div>
+          <div class="trust-value">&lt; 1 sec</div>
+          <div class="trust-label">Voice response time</div>
         </div>
         <div class="trust-item reveal">
           <div class="trust-value">24/7</div>
-          <div class="trust-label">Always available, even holidays</div>
+          <div class="trust-label">Always on &mdash; nights, weekends, holidays</div>
         </div>
         <div class="trust-item reveal">
           <div class="trust-value">0</div>
-          <div class="trust-label">Missed leads</div>
+          <div class="trust-label">Missed calls</div>
         </div>
       </div>
     </div>
@@ -413,9 +491,9 @@
       <p class="urgency-note">Limited onboarding spots for Q2 2026 &mdash; <strong>3 spots remaining</strong></p>
       <div class="quick-wins">
         <div class="quick-win"><span class="quick-win-icon">&#9889;</span><span>Live in under a week</span></div>
-        <div class="quick-win"><span class="quick-win-icon">&#128172;</span><span>24/7 voice &amp; SMS agents</span></div>
-        <div class="quick-win"><span class="quick-win-icon">&#128736;</span><span>Custom-trained for your trade</span></div>
-        <div class="quick-win"><span class="quick-win-icon">&#10003;</span><span>No long-term contracts</span></div>
+        <div class="quick-win"><span class="quick-win-icon">&#128222;</span><span>24/7 voice agent in your business's voice</span></div>
+        <div class="quick-win"><span class="quick-win-icon">&#127760;</span><span>15+ languages supported</span></div>
+        <div class="quick-win"><span class="quick-win-icon">&#128736;</span><span>Trained on your trade, your pricing, your rules</span></div>
       </div>
       <form id="interest-form" class="interest-form" action="https://formspree.io/f/xlgogqyo" method="POST">
         <div class="form-row">
@@ -535,10 +613,11 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <h3><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24" aria-hidden="true"><rect x="7" y="3" width="18" height="26" rx="3.5" ry="3.5" fill="none" stroke="#ffffff" stroke-width="1.8"/><line x1="12" y1="12" x2="20" y2="12" stroke="rgba(255,255,255,0.5)" stroke-width="1.3" stroke-linecap="round"/><line x1="12" y1="16" x2="18" y2="16" stroke="rgba(255,255,255,0.5)" stroke-width="1.3" stroke-linecap="round"/><line x1="12" y1="20" x2="16" y2="20" stroke="rgba(255,255,255,0.5)" stroke-width="1.3" stroke-linecap="round"/><path d="M26 1 L27.2 4.3 L30.5 5.5 L27.2 6.7 L26 10 L24.8 6.7 L21.5 5.5 L24.8 4.3 Z" fill="#3b82f6"/></svg> Leverage AI</h3>
-        <p>AI-powered booking agents for home service businesses. Never miss another customer.</p>
+        <p>AI voice agents for home service businesses. Never miss another call.</p>
       </div>
       <div class="footer-col">
         <h4>Product</h4>
+        <a href="#what-makes-it-different">Why It's Different</a>
         <a href="#how-it-works">How It Works</a>
         <a href="#features">Features</a>
         <a href="#dashboard">Dashboard</a>
@@ -573,6 +652,24 @@
     });
   }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
   els.forEach(function(el){ obs.observe(el); });
+})();
+
+// Call-mockup timer — ticks seconds in sync with the 20s transcript animation loop.
+(function(){
+  var timerEl = document.getElementById('call-timer');
+  if (!timerEl) return;
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce) { timerEl.textContent = '02:14'; return; }
+  var CYCLE = 20; // seconds per loop, matches CSS --call-cycle
+  var start = performance.now();
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+  function tick(now) {
+    var elapsed = ((now - start) / 1000) % CYCLE;
+    var secs = Math.floor(elapsed);
+    timerEl.textContent = '00:' + pad(secs);
+    requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
 })();
 </script>
 </body>
