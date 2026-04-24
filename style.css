@@ -1365,14 +1365,30 @@ section[id] { scroll-margin-top: 80px; }
   .nav-toggle:checked ~ .nav-hamburger span:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
 
   /* mock dashboards: mobile */
-  .mock-stats-grid-real { grid-template-columns: 1fr 1fr; gap: 8px; }
-  .mock-stat-real { padding: 10px; }
-  .mock-stat-value { font-size: 22px; }
-  .mock-nav-real { font-size: 11px; gap: 0.75rem; }
+  .mock-body { max-height: none; }
+  .mock-body::after { display: none; }
+  .mock-stats-grid-real { grid-template-columns: 1fr 1fr; gap: 8px; padding: 0 12px 12px; }
+  .mock-stat-real { padding: 10px 8px; }
+  .mock-stat-value { font-size: 20px; }
+  .mock-stat-label { font-size: 10px; line-height: 1.2; }
+  .mock-stat-sub { font-size: 8px; }
+  .mock-nav-real { font-size: 11px; gap: 0.75rem; padding: 0 12px; }
   .mock-nav-links { gap: 0.6rem; }
+  .mock-page-header { padding: 10px 12px 6px; }
+  .mock-page-title { font-size: 14px; }
   .mock-table-real { font-size: 11px; }
+  .mock-table-real th,
+  .mock-table-real td { padding: 8px 10px; }
+  .mock-phone-sm { white-space: nowrap; font-size: 10px; }
+  .mock-detail-header { padding: 8px 12px 10px; }
+  .mock-detail-info { gap: 6px; }
+  .mock-detail-info strong { font-size: 13px; }
+  .mock-call-meta { font-size: 9px; }
+  .mock-chat-real { padding: 10px 12px; }
   .hide-sm { display: none; }
   .mock-msg-user-real, .mock-msg-agent-real { max-width: 90%; }
+  .mock-url { font-size: 10px; padding: 3px 10px; }
+  .mock-toolbar { padding: 8px 12px; }
 
   /* buttons: full width on mobile */
   .cta-buttons { flex-direction: column; align-items: center; }
@@ -1401,12 +1417,13 @@ section[id] { scroll-margin-top: 80px; }
   .steps-grid { grid-template-columns: 1fr; }
   .diff-grid { grid-template-columns: 1fr; }
   .site-header { padding: 0 1rem; }
-  .hero { padding: 3rem 1rem 2.5rem; }
-  .hero h1 { font-size: 2rem; }
-  .hero .tagline { font-size: 1.05rem; }
-  .hero .cta-buttons { margin-bottom: 2.5rem; }
-  .hero-eyebrow { font-size: 0.68rem; padding: 0.3rem 0.75rem; }
-  .section { padding: 2.5rem 1rem; }
+  .hero { padding: 2.5rem 1rem 2rem; }
+  .hero h1 { font-size: 1.9rem; margin-bottom: 1rem; }
+  .hero .tagline { font-size: 1rem; margin-bottom: 0.75rem; }
+  .hero .supported { font-size: 0.85rem; margin-bottom: 1.75rem; }
+  .hero .cta-buttons { margin-bottom: 2rem; }
+  .hero-eyebrow { font-size: 0.65rem; padding: 0.3rem 0.75rem; margin-bottom: 1rem; letter-spacing: 0.1em; }
+  .section { padding: 2.25rem 1rem; }
   .section-title { font-size: 1.4rem; }
   .section-subtitle { font-size: 0.9rem; margin-bottom: 2rem; }
 
@@ -1414,12 +1431,42 @@ section[id] { scroll-margin-top: 80px; }
   .call-topbar { padding: 10px 12px; }
   .call-number { font-size: 0.65rem; }
   .call-line-text { font-size: 0.78rem; }
+  .call-booked { font-size: 0.72rem; padding: 0.45rem 0.8rem; }
 
-  /* mock dashboards */
+  /* differentiator cards: tighter on small screens */
+  .diff-card { padding: 1.25rem 1.25rem; }
+  .diff-card h3 { font-size: 1rem; }
+  .diff-card p { font-size: 0.85rem; }
+  .diff-icon { width: 38px; height: 38px; margin-bottom: 0.25rem; }
+
+  /* step cards: tighter */
+  .step-card { padding: 1.25rem 1rem; }
+
+  /* dashboard: hide status column to give customer/channel more room */
+  .mock-table-real thead th:nth-child(2),
+  .mock-table-real tbody td:nth-child(2) { display: none; }
+  .mock-table-real th,
+  .mock-table-real td { padding: 7px 8px; }
+  .mock-badge-real { font-size: 9px; padding: 2px 6px; }
+  .mock-stats-grid-real { grid-template-columns: 1fr 1fr; }
+  .mock-stat-value { font-size: 18px; }
+  .mock-nav-real { font-size: 10px; gap: 0.5rem; height: 40px; }
+  .mock-nav-brand-real { font-size: 11px; }
+  .mock-url { font-size: 9px; }
+  .mock-msg-meta { font-size: 8px; }
+  .mock-msg { font-size: 12px; padding: 8px 11px; }
+
   /* urgency + quick wins */
   .urgency-note { font-size: 0.8rem; padding: 0.4rem 1rem; }
-  .quick-wins { gap: 0.75rem 1.25rem; }
+  .quick-wins { gap: 0.65rem 1rem; }
   .quick-win { font-size: 0.8rem; }
+
+  /* trust signals: tighter */
+  .trust-item { padding: 1.5rem 1.25rem; }
+  .trust-value { font-size: 1.85rem; }
+
+  /* feature card: tighter */
+  .feature-card { padding: 1.75rem 1.25rem; }
 
   /* form */
   .form-input { padding: 0.65rem 0.85rem; font-size: 0.9rem; }
